@@ -177,3 +177,36 @@ This cardinality connects many single objects with many other single objects.
 
 Many to one:
 This cardinality connects many objects with one single object
+
+
+Explain different languages present in DBMS.
+
+Following are various languages present in DBMS:
+
+DDL(Data Definition Language):  It contains commands which are required to define the database.
+E.g., CREATE, ALTER, DROP, TRUNCATE, RENAME, etc.
+
+DML(Data Manipulation Language): It contains commands which are required to manipulate the data present in the database.
+E.g., SELECT, UPDATE, INSERT, DELETE, etc.
+
+DCL(Data Control Language):  It contains commands which are required to deal with the user permissions and controls of the database system.
+E.g., GRANT and REVOKE.
+
+TCL(Transaction Control Language):  It contains commands which are required to deal with the transaction of the database.
+E.g., COMMIT, ROLLBACK, and SAVEPOINT.
+
+
+DELETE command: this command is needed to delete rows from a table based on the condition provided by the WHERE clause.
+
+1. It deletes only the rows which are specified by the WHERE clause.
+2. It can be rolled back if required.
+3. It maintains a log to lock the row of the table before deleting it and hence it’s slow.
+
+
+TRUNCATE command: this command is needed to remove complete data from a table in a database. It is like a DELETE command which has no WHERE clause.
+
+1. It removes complete data from a table in a database.
+2. It can't be rolled back even if required. ( truncate can be rolled back in some databases depending on their version but it can be tricky and can lead to data loss). Check this link for more details
+3. It doesn’t maintain a log and deletes the whole table at once and hence it’s fast.
+
+https://www.interviewbit.com/dbms-interview-questions/
